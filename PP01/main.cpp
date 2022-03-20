@@ -68,7 +68,7 @@ public :
 
 	void Start()
 	{
-		cout << "적의 HP는 " << HP << "입니다\n";
+		cout << "적의 HP는 " << HP << "입니다!\n";
 	}
 	void Update()
 	{
@@ -81,15 +81,15 @@ int main()
 	is_game_running = true;
 
 	GameObject* p = new Player();
-	GameObject* e = new Player();
+	GameObject* e = new Enemy();
 
 	p->Start();
 	e->Start();
 
 	while (is_game_running)
 	{
-		p->Start();
-		e->Start();
+		p->Update();
+		e->Update();
 
 		cout << "입력해주세요! (1: 게임종료, 2: 게임 계속)";
 		int input;
