@@ -34,20 +34,20 @@ public :
 	
 	Player()
 	{
-		cout << "플레이어 생성!!!\n";
+		cout << "향기 생성!!!\n";
 	}
 	~Player()
 	{
-		cout << "플레이어 소멸!\n";
+		cout << "향기 소멸!\n";
 	}
 
 	void Start()
 	{
-		cout << "플레이어의 HP는 " << HP << "입니다!\n";
+		cout << "향기의 HP는 " << HP << "입니다!\n";
 	}
 	void Update()
 	{
-		cout << "플레이어 업데이트!!!\n";
+		cout << "향기 업데이트!!!\n";
 	}
 };
 
@@ -59,20 +59,20 @@ public :
 
 	Enemy()
 	{
-		cout << "적 생성!\n";
+		cout << "문 생성!\n";
 	}
 	~Enemy()
 	{
-		cout << "적 소멸!\n";
+		cout << "문 소멸!\n";
 	}
 
 	void Start()
 	{
-		cout << "적의 HP는 " << HP << "입니다!\n";
+		cout << "문의 HP는 " << HP << "입니다!\n";
 	}
 	void Update()
 	{
-		cout << "적 업데이트!!!\n";
+		cout << "문 업데이트!!!\n";
 	}
 };
 
