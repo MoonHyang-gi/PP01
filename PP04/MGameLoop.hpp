@@ -5,6 +5,7 @@
 
 using namespace std;
 
+
 namespace MuSeoun_Engine
 {
 	class MGameLoop
@@ -74,12 +75,16 @@ namespace MuSeoun_Engine
 
 			chrono::duration<double> renderDuration = chrono::system_clock::now() - startRenderTimePoint;
 
-			string fps = "FPS(milliseconds):" + to_string(renderDuration.count());
+			string fps = "FPS(millisecond):" + to_string(renderDuration.count());
 			cRenderer.DrawString(fps);
 
+			cout << "FPS: " << renderDuration.count() * 60 << endl;
+				
+			int FPS = 60 - ((int)renderDuration.count() * 60.0f);
+			if (FPS > 0)
+				this_thread::sleep_for(chrono::microseconds(FPS));
 
-
-			//지금은 랜더듀레이션 (시작포인트~끝포인트까지 시작 재는거), 프레임퍼세컨드 구하기
+			//지금은 랜더듀레이션 (시작포인트~끝포인트까지 시작 재는거)-> 프레임퍼세컨드 구하기
 			//millisecond->second 나누기임!!
 
 			////cout << "Rendering speed : " << renderDuration.count() << "sec" << endl;
