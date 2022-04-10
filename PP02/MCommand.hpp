@@ -12,3 +12,10 @@ namespace Musoeun
 		virtual void Execute() {	}
 	};
 }
+
+
+//overload
+//override
+//vurtual
+
+//binding 

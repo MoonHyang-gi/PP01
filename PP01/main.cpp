@@ -90,7 +90,7 @@ int main()
 	{
 		p->Update();
 		e->Update();
-
+		
 		cout << "입력해주세요! (1: 게임종료, 2: 게임 계속)";
 		int input;
 		cin >> input;
