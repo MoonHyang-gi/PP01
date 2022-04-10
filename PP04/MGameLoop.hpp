@@ -84,14 +84,6 @@ namespace MuSeoun_Engine
 			if (FPS > 0)
 				this_thread::sleep_for(chrono::microseconds(FPS));
 
-			//지금은 랜더듀레이션 (시작포인트~끝포인트까지 시작 재는거)-> 프레임퍼세컨드 구하기
-			//millisecond->second 나누기임!!
-
-			////cout << "Rendering speed : " << renderDuration.count() << "sec" << endl;
-
-			//int remainingFrameTime = 100 - (int)(renderDuration.count() * 1000.0);
-			//if (remainingFrameTime > 0)
-				//this_thread::sleep_for(chrono::milliseconds(remainingFrameTime));
 		}
 	};
 }
