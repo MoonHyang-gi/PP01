@@ -1,3 +1,2 @@
 ﻿  main.cpp
-E:\Visual studio 2022\PP01\PP04\MGameLoop.hpp(83,12): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   PP04.vcxproj -> E:\Visual studio 2022\PP01\x64\Debug\PP04.exe
