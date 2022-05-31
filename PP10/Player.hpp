@@ -27,7 +27,7 @@ public:
     {
         coord.y = distance;
     }
-
+    
     void MoveRight(float distance)
     {
         coord.x = distance;

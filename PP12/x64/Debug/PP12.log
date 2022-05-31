@@ -1,0 +1,6 @@
+﻿  Texture.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': 매크로 재정의
+E:\Visual studio 2022\PP01\packages\glfw.3.3.7\build\native\include\GLFW\glfw3.h(123): message : 'APIENTRY'의 이전 정의를 참조하십시오.
+Texture.obj : error LNK2005: "void __cdecl init(void)" (?init@@YAXXZ)이(가) Bitmap.obj에 이미 정의되어 있습니다.
+Texture.obj : error LNK2005: main이(가) Bitmap.obj에 이미 정의되어 있습니다.
+E:\Visual studio 2022\PP01\x64\Debug\PP12.exe : fatal error LNK1169: 여러 번 정의된 기호가 있습니다.
